@@ -45,7 +45,7 @@ export default function Chatbot(){
     setInput('');
     setLoading(true);
     try{
-      const reason = await getNoReason();
+      const reason = await getNoReason(input);
       const botMessage: Message = {
         id: (Date.now()+1).toString(),
         text: reason,
@@ -78,7 +78,11 @@ export default function Chatbot(){
           border: '1px solid #450a0a',
           backgroundImage: 'linear-gradient(135deg, #0a0a0a 0%, #1a0505 100%)',
         }}
-        >
+        ><Box sx={{ textAlign: 'center', py: 1, opacity: 0.5 }}>
+          <Typography variant="caption" sx={{ color: '#666' }}>
+            🔒 Messages are ephemeral • Refresh to reset
+          </Typography>
+        </Box>
           <Box className="border-b-2"
             sx={{
               background: 'linear-gradient(90deg,#1a0a0a 0%, #2d0f0f 100%)',
