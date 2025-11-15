@@ -178,7 +178,8 @@ export default function Chatbot(){
                 lineHeight: 1.5,
                 wordBreak: 'break-word',
               }}
-              >{msg.text}</Typography>
+              >{msg.text}
+              </Typography>
               <Typography
               sx={{
                 fontSize: '0.7rem',

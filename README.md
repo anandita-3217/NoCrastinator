@@ -72,7 +72,7 @@ TODO: MAKE SURE TO USE THE LIB/API.TS
 - Express Js (Proxy Server)
 - framer-motion -->
 
-# NOcrastinator
+# Noracle
 
 > **The chatbot that respectfully declines everything.** Powered by [no-as-a-service](https://github.com/hotheadhacker/no-as-a-service), NOcrastinator responds to every user message with a creative "no" response.
 
